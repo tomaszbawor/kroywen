@@ -1,12 +1,12 @@
-let pong;
-const ping = () => {
-  console.log("Ping");
-  setTimeout(pong, 1000);
-};
+import express from "express";
 
-pong = () => {
-  console.log("Pong");
-  setTimeout(ping, 1000);
-};
+const application = express();
+const appPort = 3000;
 
-ping();
+application.get("/", (request, response) => {
+  response.send("Hello from the server");
+});
+
+application.listen(appPort, () =>
+  console.log(`Application listening on port: ${appPort}`)
+);
