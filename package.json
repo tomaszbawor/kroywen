@@ -4,10 +4,19 @@
   "description": "Test project for node learning",
   "main": "./src/index.js",
   "scripts": {
-    "run": "node ./src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./src/index.js",
+    "lint": "eslint . ",
+    "lint:fix": "eslint . --fix"
   },
   "keywords": [],
   "author": "Tomasz Bawor",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "prettier": "^1.19.1"
+  }
 }
