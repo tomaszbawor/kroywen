@@ -6,6 +6,7 @@
     },
     "extends": [
         "airbnb-base",
+        "plugin:node/recommended",
         "prettier"
     ],
     "globals": {
@@ -16,8 +17,9 @@
         "ecmaVersion": 2018,
         "sourceType": "module"
     },
-    "plugins": ["prettier", "jest"],
+    "plugins": ["prettier", "jest", "node"],
     "rules": {
+        "import/extensions": "off",
         "prettier/prettier": "error"
     }
 }
